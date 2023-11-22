@@ -1,0 +1,1002 @@
+
+/* rotien things */
+
+:root{
+    --pink : #ff4e5b;
+    --darkpink: #f4404c;
+    --wight: #f1f1f1;
+    --darkblue: #0c0116;
+}
+
+button:hover{
+    border-radius: 16px;
+}
+
+body{
+    padding: 0px;
+    margin: auto;
+    font-family:'Times New Roman', Times, serif;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-track{
+    background-color: #180c24;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fe757e;
+    border-radius: 4px;
+}
+
+.upbtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 36px;
+    z-index: 9999999;
+    background-color: #180c24;
+    color: var(--wight);
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* home & header start */
+
+.home{
+    background-image: url(/images/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+}
+
+.home header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    width: auto;
+    height: 70px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    height: 70px;
+    padding: 10px;
+    margin-top: 20px; 
+}
+
+.container .logo{
+    width: 86px;
+    height: 40px;
+}
+
+.container .links{
+    margin-left: 100px;
+    margin: 0px;
+    margin-left: 63px;
+    padding: 0px;
+}
+
+.container .links a{
+    display: inline-flex;
+    justify-content: flex-end;
+    margin: 10px;
+    font-size: 1.2rem;
+    color: var(--wight);
+    list-style: none;
+    cursor: pointer;
+    text-decoration-line: none;
+    transition: 0.3s;
+}
+
+.container .links a:hover{
+    color: var(--pink);
+    cursor: pointer;
+}
+
+.container .h-icons{
+    position: relative;
+    left: 50px;
+    display: flex;
+    width: 10px;
+}
+
+.container .h-icons svg{
+    color: var(--wight);
+    font-size: 28px;
+    margin: 12px 35px 35px 0px;
+}
+
+.barmenu{
+    display: none;
+}
+
+.shose-one,
+.shose-two,
+.shose-three{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.owl-carousel .owl-item img {
+    display: flex;
+    margin-top: 36px;
+    width: 530px
+}
+
+.descrbtion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.descrbtion h2{
+    color: var(--pink);
+    margin: 10px;
+}
+
+.descrbtion h1{
+    color: var(--wight);
+    margin: 8px;
+}
+
+.descrbtion p{
+    color: var(--wight);
+    width: 450px;   
+}
+
+.descrbtion .btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding: 0px;
+}
+
+.descrbtion .btn .BtnOne{
+    width: 180px;
+    height: 60px;
+    color: var(--wight);
+    background-color: var(--pink);
+    border: none;
+    border-radius: 3px;
+    font-size: 23px;
+    transition: 1s;
+}
+
+
+.descrbtion .btn .BtnTwo{
+    width: 180px;
+    height: 60px;
+    color: var(--pink);
+    background-color: var(--wight);
+    border: none;
+    border-radius: 3px;
+    font-size: 23px;
+    transition: 0.8s;
+}
+
+.descrbtion span{
+    font-size: 24px;
+    color: var(--wight);
+    position: relative;
+    top: 100px;
+}
+
+.owl-dots{
+    width: 150px;
+    position: relative;
+    left: 45%;
+    bottom: 23px;
+}
+
+.owl-carousel button.owl-dot{
+    background-color: var(--wight);
+    border-radius: 50px;
+    width: 16px;
+    height: 16px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.owl-dots .owl-dot.active{
+    background-color: var(--darkblue);
+    border-color: var(--darkpink);
+    border-width: 2.5px;
+    border-style: solid;
+}
+
+.burger{
+    z-index: 11111111111;
+}
+
+.bar{
+    display: none;
+    margin: 0px;
+}
+
+.contentbar{
+    display: none;
+}
+/* collection start */
+
+.collection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+.collection h3,
+.collection p{
+    text-align: center;
+    margin-left: 80px;
+    color: var(--darkblue);
+}
+
+.collection h3{
+    font-size: 32px;
+    margin: auto;
+    margin-bottom: 36px;
+}
+
+.collection p{
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.collectionBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.collectionBox .new{
+    background-color: black;
+    color: #f1f1f1;
+    font-size: 23px;
+    width: 100px;
+    height: 50px;
+    padding: 8px;
+    text-align: center;
+    position: relative;
+    bottom: 210px;
+    left: 46px;
+    z-index: 122;
+}
+
+.collectionBox .shoesone,
+.collectionBox .shoestwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0px #434242;
+    width: 530px;
+    height: 430px;
+    z-index: 2;
+}
+
+.collectionBox .shoestwo{
+    background-image: url(/images/about-img2.webp);
+    position: relative;
+    top: 88px;
+    height: 480px;
+    right: 70px;
+    z-index: 1;
+}
+
+.shoesone .imgOne{
+    margin-top: 0px;
+    width: 350px;
+}
+
+.shoestwo .imgTwo{
+    margin-top: 50px;
+    width: 350px;
+}
+
+.collectionBox .detales{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.detales span{
+    font-size: 24px;
+}
+
+.colorOn{
+    color: var(--pink);
+}
+
+.rate .fa-star{
+    display: inline;
+    width: 18px;
+    margin: 3px;
+    margin-top: 12px;
+    color: rgb(248, 191, 35);
+}
+
+.collection button{
+    position: relative;
+    top: 50px;
+    right: 430px;
+    background-color: var(--pink);
+    color: var(--wight);
+    width: 180px;
+    height: 52px;
+    font-size: 22px;
+    border: none;
+    text-align: center;
+}
+
+/* racing start */
+
+.racing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.racing h3,
+.racing p{
+    text-align: center;
+    margin-left: 80px;
+    width: 1000px;
+    color: var(--darkblue);
+}
+
+.racing h3{
+    font-size: 32px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.racing p{
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.racingShoes{
+    display: flex;
+    align-items: center;
+    background-color: rgb(196, 195, 193);
+    width: 1150px;
+    height: 600px;
+}
+
+.racingShoes img{
+    margin-left: 80px;
+    width: 530px;
+    height: auto;
+}
+
+.words{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.words span{
+    font-size: 64px;
+}
+
+.words button{
+    margin-top: 50px;
+}
+
+.words button{
+    background-color: var(--pink);
+    color: var(--wight);
+    width: 180px;
+    height: 52px;
+    font-size: 22px;
+    border: none;
+    text-align: center;
+    transition: 0.8s;
+}
+
+/* newproducts start */
+
+.NewProducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.NewProducts h3,
+.NewProducts p{
+    text-align: center;
+    margin-left: 80px;
+    color: var(--darkblue);
+}
+
+.NewProducts h3{
+    font-size: 32px;
+    margin: auto;
+    margin-bottom: 36px;
+}
+
+.NewProducts p{
+    font-size: 20px;
+    margin: auto;
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
+.autowidth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink);
+    width: 100%;
+}
+
+.NewProductContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--pink);
+    width: 1100px;
+    height: 1050px;
+    padding: 25px;
+}
+
+.NewProductContent .Product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    margin: 15px;
+    background-color: var(--wight);
+}
+
+.Product .productDetaile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NewProductContent .Product img{
+    width: 210px;
+    margin-bottom: 30px;
+}
+
+.productDetaile .rate{
+    margin-right: 43px;
+}
+
+.productDetaile .rate .star{
+    width: 23px;
+}
+
+.NewProductContent span{
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+/* Contact Now start */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.information form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact img{
+    width: 800px;
+    margin-left: 25px;
+}
+
+.contact span{
+    font-size: 36px;
+}
+
+.contact input{
+    width: 450px;
+    height: 50px;
+    margin: 12px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.contact .massage{
+    width: 450px;
+    height: 200px;
+    margin: 12px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.contact button{
+    text-align: center;
+    background-color: var(--pink);
+    color: var(--wight);
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    width: 125px;
+    height: 40px;
+}
+
+/* footer start */
+footer{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height:390px;
+    background-color: #272222;
+}
+
+footer .footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 350px;
+}
+
+.footer-container .social-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    width: auto;
+    margin-top: 50px;
+}
+
+.social-section .footer-logo img{
+    width: 150px;
+}
+
+.social-section span{
+    color: var(--wight);
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.social-section .phone,
+.social-section .email{
+    display: flex;
+    align-items: center;
+
+}
+
+.social-section svg{
+    color: var(--wight);
+    font-size: 26px;
+    margin: 10px;
+}
+
+.social-section .socialicons svg{
+    cursor: pointer;
+}
+
+footer .footer-contact-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    gap: 70px;
+    width: auto;
+}
+
+.footer-contact-section .adders{
+    width: 250px;
+}
+
+.footer-contact-section .adders svg{
+    color: var(--wight);
+    font-size: 28px;
+    position: relative;
+    top: 73px;
+}
+
+footer li,
+footer h3{
+    list-style: none;
+    color: var(--wight);
+}
+
+.footer-contact-section .letter form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-contact-section .letter form .email{
+    width: 220px;
+    height: 45px;
+    padding: 10px;
+}
+
+.footer-contact-section .letter form .sent{
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    color: var(--wight);
+    background-color: var(--pink);
+    font-size: 18px;
+    border: none;
+}
+
+
+/* all right's (end of page) */
+
+.allright{
+    background-color: var(--pink);
+    width: auto;
+    height: 32px;
+}
+
+.allright p{
+    text-align: center;
+    color: var(--wight);
+    font-size: 18px;
+}
+
+
+/*custom screen start */
+
+/* min mid & larg mobile screen */
+
+@media (max-width : 430px) {
+    /* home&headr */
+    .home{
+        height: 850px;
+    }
+    header{
+        margin-bottom: 28px;
+    }
+
+    .container .h-icons svg {
+    margin: 16px 24px 0px 0px;
+    }
+
+    header .container{
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        width: 300px;
+    }
+    .container .links{
+        display: none;
+        position: relative;
+        top: 174px;
+        left: 64px;
+        background-color: var(--darkpink);
+        margin: 10px;
+        z-index: 9;
+    }
+    .links li:hover{
+        color: var(--darkblue);
+    }
+    .h-icons svg{
+        margin: 16px ;
+        margin-top: 32px;
+    }
+    .barmenu{
+        display: block;
+        z-index: 10;
+    }
+    .barvalue svg{
+        margin: 0px;
+    }
+    .barvalue li{
+        margin: 10px;
+        list-style: none;
+    }
+    svg:hover{
+        color: var(--wight);
+    }
+    .barvalue{
+        display: none;
+        color: var(--wight);
+        z-index: 11;
+    }
+    .cards .shose-one,
+    .cards .shose-two,
+    .cards .shose-three{
+        flex-direction: column-reverse;
+    }
+    .cards .shose-one .descrbtion,
+    .cards .shose-two .descrbtion,
+    .cards .shose-three .descrbtion{
+        width: 400px;
+        margin-left: 150px;
+    }
+    .owl-carousel .owl-item img{
+        width: 275px;
+    }
+    .descrbtion p{
+        width: 300px;
+    }
+    .descrbtion .btn{
+        width: 245px;
+        margin: 20px;
+    }
+    .descrbtion .BtnTwo{
+        margin: 12px;
+    }
+    .owl-dots{
+        left: 36%;
+        bottom: 6px;
+    }
+    /* collection */
+    .collectionBox{
+        display: flex;
+        flex-direction: column;
+    }
+    .collection p{
+        width: 350px;
+    }
+    .collectionBox .shoesone,
+    .collectionBox .shoestwo{
+        width: 290px;
+        height: 475px;
+    }
+    .collectionBox .shoestwo{
+        margin-right: 15px;
+    }
+    .collectionBox .shoesone img,
+    .collectionBox .shoestwo img{
+        width: 100% ;
+    }
+    .shoestwo{
+        position: relative;
+        left: 10px;
+    }
+    .collectionBox .new{
+        bottom: -21px;
+        left: -105px;
+    }
+    .collection button{
+        position: relative;
+        left: 0%;
+        margin-top: 30px;
+    }
+    /* racing */
+    .racing h3{
+        width: 197px;
+    }
+    .racing p{
+        width: 300px;
+    }
+    .racingShoes{
+        flex-direction: column;
+        height: 1050px;
+        width: 300px;
+    }
+    .racingShoes img{
+        width: 100%;
+        margin: auto;
+    }
+    .racingShoes .words{
+        margin: auto;
+    }
+    /* NewProducts */
+    .NewProducts p{
+        width: 340px;
+    }
+    .NewProductContent{
+        height: auto;
+    }
+    /* contact now */
+    .contact{
+        flex-direction: column;
+    }
+    .information{
+        width: 300px;
+    }
+    .contact input,
+    .contact .massage{
+        width: auto;
+    }
+    .contact img{
+        margin-top: 45px;
+        width: 300px;
+        margin: auto;
+    }
+    /* footer */
+    footer{
+        height: 1250px;
+    }
+    .footer-container{
+        width: 320px;
+    }
+    .footer-container .social-section{
+        flex-direction: column;
+        gap: 45px;
+    }
+    footer .footer-contact-section{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* tablet screen */
+
+@media (min-width : 750px) and (max-width : 1024px){
+    .upbtn{
+        bottom: 40px;
+        right: 160px;
+    }
+    /* header & home */
+    .home{
+        border-image-width: 100%;
+    }
+    header .container{
+        justify-content: space-evenly;
+        width: 720px;
+    }
+    .container .links{
+        margin: 0px;
+    }
+    .container .h-icons{
+        left: 0px;
+    }
+    .container .h-icons svg{
+        margin: 0px 20px 0px 0px;
+    }
+    .container .links a{
+        margin: 6px;
+    }
+    .cards{
+        margin-top: 100px;
+    }
+    .cards .shose-one,
+    .cards .shose-two,
+    .cards .shose-three{
+        overflow: hidden;
+        justify-content: space-between;
+    }
+    .cards .shose-one .descrbtion,
+    .cards .shose-two .descrbtion,
+    .cards .shose-three .descrbtion{
+        width: 300px;
+        margin-left: 32px;
+    }
+    .descrbtion h2{
+        font-size: 30px;
+    }
+    .descrbtion h1{
+        font-size: 40px;
+    }
+    .descrbtion p{
+        width: 330px;
+    }
+    .descrbtion .btn{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .btn .BtnOne{
+        margin-bottom: 10px;
+    }
+    .owl-carousel .owl-item img{
+        width: 345px;
+        margin-bottom: 2.3rem;
+    }
+    /* collection */
+    .collection button{
+        right: 255px;
+    }
+    .collectionBox .new{
+        left: 75px;
+    }
+    .collectionBox .shoesone,
+    .collectionBox .shoestwo{
+        width: 390px;
+        height: 450px;
+    }
+    .collectionBox .shoestwo{
+        top: 117px;
+        height: 475px;
+    }
+    .shoesone .imgOne{
+        width: 295px;
+    }
+    .shoestwo .imgTwo{
+        width: 295px;
+        margin-left: 50px;
+    }
+    /* racing shoes */
+    .racing h3{
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+    .racing p{
+        width: 760px;
+    }
+    .racingShoes{
+        width: 760px;
+    }
+    .racingShoes img{
+        width: 400px;
+        margin-left: 15px;
+    }
+    .racingShoes .words{
+        margin-left: 80px;
+    }
+    /* new products */
+    .NewProducts p{
+        width: 730px;
+    }
+    .NewProductContent{
+        height: auto;
+    }
+    /* contact */
+    .contact input,
+    .contact .massage{
+        width: 275px;
+    }
+    .contact img{
+        overflow: hidden;
+    }
+    /* footer */
+    footer{
+        height: 570px;
+    }
+    footer .footer-container{
+        margin-top: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-container .social-section{
+        gap: 8px;
+    }
+    footer .footer-contact-section{
+        gap: 0px;
+        flex-wrap: wrap;
+        margin-top: 45px;
+    }
+    .footer-contact-section .prod{
+        margin-right: 50px;
+    }
+    .footer-contact-section .letter{
+        margin-left: 40%;
+        margin-top: 25px;
+    }
+    .footer-contact-section .adders{
+        margin-left: 30px;
+    }
+}
